@@ -1,0 +1,46 @@
+html, body{
+    margin:0;
+    padding:0;
+    background-color: blue;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 30vh 20vh 40vh;
+    grid-template-areas: "navbar navbar"
+                         "header header"
+                         "main aside"
+                         "footer footer";
+}
+
+
+.navbar{
+    background-color: white;
+    grid-area: navbar;
+}
+
+header{
+    background-color: purple;
+    grid-area: header;
+    text-decoration: none;
+}
+
+.header > div{
+    background-color: violet;
+    align-content: center;
+}
+
+main{
+    background-color: yellow;
+    grid-area: main;
+}
+
+aside{
+    background-color: red;
+    grid-area: aside;
+}
+footer{
+    background-color: black;
+    grid-area: footer;
+}
